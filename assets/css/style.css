@@ -92,6 +92,22 @@ a {
     cursor: pointer;
 }
 
+.section__heading {
+    font-size: 5rem;
+    font-weight: 600;
+    color: #10375c;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.section__desc {
+    margin-top: 18px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+    color: #575f66;
+}
+
 /* Header */
 .header {
     min-height: 100vh;
@@ -104,6 +120,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 15px;
+    z-index: 1;
 }
 
 .navbar__list {
@@ -223,4 +242,90 @@ a {
 .hero__image:last-child {
     width: 210px;
     height: 410px;
+}
+
+/* Services */
+.services {
+    padding: 170px 0;
+}
+
+.services__heading,
+.services__desc {
+    text-align: center;
+}
+
+.services__desc {
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services__container {
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.services-box {
+    display: flex;
+    width: 470px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 22px;
+    transition: 0.25s;
+}
+
+.services-box:hover {
+    position: relative;
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
+}
+
+.services-box:hover .services-box__icon {
+    background: #2e80ce;
+    color: #fff;
+}
+
+.services-box__icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #10375c;
+    border-radius: 50%;
+    background: #eff6fd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    transition: 0.25s;
+}
+
+.services-box__body {
+    margin-left: 20px;
+}
+
+.services-box__heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #10375c;
+    line-height: 1.27;
+}
+
+.services-box__desc {
+    margin-top: 8px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #575f66;
+}
+
+.services__info {
+    margin-bottom: 55px;
 }
