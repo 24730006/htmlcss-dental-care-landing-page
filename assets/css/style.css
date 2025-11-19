@@ -604,7 +604,7 @@ a {
 }
 
 .news-item:hover {
-    transform: translateY(-15px);
+    transform: translateY(-7px);
     box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.05);
 }
 
@@ -650,4 +650,39 @@ a {
     font-size: 1.4rem;
     line-height: 1.6;
     color: #2e80ce;
+}
+
+.news-item__more:hover {
+    color: #10375c;
+}
+
+/* Appointment */
+.appointment {
+    margin: 85px 0 170px;
+}
+
+.appointment__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f6fbff;
+    padding: 100px 0;
+}
+
+.appointment__heading::after {
+    content: "";
+    display: block;
+    width: 136px;
+    height: 2px;
+    margin: 18px auto 0;
+    background: #2e80ce;
+}
+
+.appointment__desc {
+    max-width: 617px;
+    text-align: center;
+}
+
+.appointment__cta {
+    margin-top: 38px;
 }
